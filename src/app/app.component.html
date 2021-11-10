@@ -1,0 +1,7 @@
+<div class="container-slide">
+  <div class="action-button" id="previus" (click)="previus()">&laquo</div>
+    <div class="container-items" *ngFor="let image of images; let i = index" id= "containerItems">
+      <img [src]="image.image" alt="text" class="items" #items>
+    </div>
+  <div class="action-button" id="next">&raquo</div>
+</div>
